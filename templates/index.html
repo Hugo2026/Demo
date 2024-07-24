@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Two Digits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src= {{ img }}  alt="MOUSE"> 
+    <h1>Add Two Digits</h1>
+    
+    <form method="post" action="/">
+        <label for="num1">Enter first number:</label>
+        <input type="text" id="num1" name="num1">
+        <br><br>
+        <label for="num2">Enter second number:</label>
+        <input type="text" id="num2" name="num2">
+        <br><br>
+        <button type="submit">Add</button>
+    </form>
+    {% if result is not none %}
+    <div class="result">
+        <p>Result: {{ result }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
